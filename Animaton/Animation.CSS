@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#000;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+
+.container {
+    background-color: #000;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left:13%;
+    
+    
+    
+
+}
+
+.google {
+    display: inline-block;
+    height: fit-content;
+    font-size: 24vh;
+    font-weight: bolder;
+    letter-spacing: 7vh;
+    font-family: sans-serif;
+    
+    animation: animate 3s linear 1s  alternate forwards;
+    opacity: 0;
+
+
+
+}
+
+.g {
+    animation-delay: 1s;
+    color:cornflowerblue;
+}
+.o {
+    animation-delay: 1.5s;
+    color:red;
+}
+.o2 {
+    animation-delay: 2s;
+    color:yellow;
+}
+
+.g2 {
+    animation-delay: 2.5s;
+    color:cornflowerblue;
+}
+
+.l {
+    animation-delay: 3s;
+    color:green;
+}
+
+.e {
+    animation-delay: 3.5s;
+    color:red;
+}
+
+@keyframes animate {
+    0% {
+        
+        opacity:0;
+        transform: rotate(90deg);
+        filter: blur(40px);
+        
+    }
+
+   
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+        filter:blur(0)
+    }
+    
+}
+
+.dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    animation: dot 2s linear infinite alternate;
+}
+
+.span {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    
+}
+
+.red {
+    background-color: red;
+    animation-delay: 0.5s;
+}
+
+.blue {
+    background-color: blue;
+    animation-delay: 1s;
+}
+
+.yellow {
+    background-color: yellow;
+    animation-delay: 1.5s;
+}
+.green {
+    background-color: green;
+    animation-delay: 2s;
+}
+
+@keyframes dot {
+    0% {
+        
+        opacity:0;
+        transform: rotate(90deg);
+        filter: blur(40px);
+        transform: translateY(0);
+    }
+
+    100% {
+        
+        opacity: 1;
+        transform: rotate(0deg);
+        filter:blur(0);
+        transform: translateY(30px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
